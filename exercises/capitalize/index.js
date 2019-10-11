@@ -13,8 +13,7 @@ function capitalize(str) {
   let counter = 1;
 
   for (let word of arrSentence) {
-    capString += word[0].toUpperCase();
-    capString += word.slice(1);
+    capString += word[0].toUpperCase() + word.slice(1);
     if (counter != arrSentence.length) {
       capString += " ";
     }
